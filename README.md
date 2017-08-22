@@ -7,9 +7,8 @@ brew install haskell-stack
 stack setup
 ```
 
-# Compiling
+# Compiling/Running
 
 ```
-stack buildstack
-stack exec lets-haskell
+stack runghc src/BasicFunctions.hs
 ```
