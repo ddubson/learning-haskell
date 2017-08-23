@@ -6,6 +6,9 @@ f x = x + 10
 {- Function g -}
 g x = x * x
 
+doubleSmallNumber :: Integer -> Integer
+doubleSmallNumber x = if x > 100 then x else x*2
+
 addBrackets s = "[" ++ s ++ "]"
 
 main :: IO ()
@@ -27,3 +30,6 @@ main = do
 
     print "For each item, add brackets"
     print $ map addBrackets ["one", "two", "three"]
+
+    print "Double a small number"
+    print (doubleSmallNumber 55)
